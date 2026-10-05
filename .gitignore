@@ -1,0 +1,12 @@
+node_modules/
+releases/
+.openai/
+.sites-runtime/
+.env
+.env.*
+!.env.example
+*.log
+*.tar.gz
+__pycache__/
+.DS_Store
+Thumbs.db

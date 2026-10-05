@@ -1,0 +1,21 @@
+{
+  "name": "sentinel-security-workspace",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Privacy-first web security workspace with an evidence-led penetration-test report builder, CVSS v3.1 scoring, Markdown/PDF export, and a local password strength analyzer.",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "check": "node --check dist/report-core.js && node --check dist/reports.js && node --check dist/app.js && node --check dist/analysis-core.js && node --check dist/analyzer.worker.js && node --check serve.cjs",
+    "start": "node serve.cjs"
+  },
+  "dependencies": {
+    "zxcvbn": "4.4.2"
+  },
+  "devDependencies": {
+    "linkedom": "0.18.12"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  }
+}
